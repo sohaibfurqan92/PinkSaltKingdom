@@ -238,15 +238,33 @@ img {
 }
 
 /* Header */
+/* topbar */
+#topBar {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem;
+  border-bottom: 2px solid snow;
+}
+
+#topBar .topBar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#topBar .contact {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
 /* Nav */
 
 #nav {
   padding: 1rem 0;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  background: rgb(255, 255, 255, 0.3);
+  background: var(--primary-color);
   z-index: 1000;
 }
 
@@ -267,9 +285,20 @@ img {
   font-family: var(--heading-Font-Family);
   text-transform: uppercase;
 }
+/* Needs attention */
+#nav .socials a {
+  color: #fff;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#nav .socials a:hover {
+  animation: herobtn 1.5s linear infinite;
+}
+/* ------------------------- */
 
 #nav .nav-items .nav-link {
-  color: var(--text-color);
+  color: #fff;
 }
 
 #nav .nav-items .nav-link.active {
@@ -280,6 +309,7 @@ img {
 #home-1 {
   background: url('../images/hero.jpg') no-repeat center center/cover;
   height: 100vh;
+  box-shadow: 0 5px 5px var(--primary-color);
 }
 
 #home-1 .hero-container {
@@ -466,7 +496,8 @@ img {
 #footer h1,
 #footer h2,
 #footer h3,
-#footer h4 {
+#footer h4,
+#footer a {
   color: white;
 }
 #footer i.fas {
@@ -493,6 +524,6 @@ img {
   grid-column: 1 / span 3;
 
   margin-top: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
   background: #d85966;
 }
