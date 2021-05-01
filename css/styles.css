@@ -589,4 +589,10 @@ img {
   transition: all 0.8s ease-in-out;
 }
 
+#about-3 .certificates {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
 /* About Page styles end */
