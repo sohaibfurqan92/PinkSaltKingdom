@@ -86,6 +86,27 @@
   margin: auto;
 }
 
+/* About page styles */
+
+#about-1 {
+  padding: 1rem;
+  text-align: center;
+}
+
+#about-1 .about-section-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+#about-1 .col {
+  width: 100%;
+}
+
+#showcase .features,
+#about-3 .certificates {
+  grid-template-columns: none;
+}
+
 /* Footer styles */
 
 #footer .footer-container {
@@ -113,5 +134,10 @@
 
   #home-6 .accredations-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  #showcase .features,
+  #about-3 .certificates {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
