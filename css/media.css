@@ -107,6 +107,20 @@
   grid-template-columns: none;
 }
 
+/* Product Page Styles */
+#product-content .product-images {
+  grid-template-columns: 1fr;
+}
+
+#product-summary .col:first-child {
+  display: none;
+  width: 0;
+}
+
+#product-summary .col:last-child {
+  min-width: 100%;
+}
+
 /* Footer styles */
 
 #footer .footer-container {

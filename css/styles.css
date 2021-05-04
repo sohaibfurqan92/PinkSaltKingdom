@@ -21,7 +21,7 @@
 
 body {
   font-family: var(--text-Font-Family);
-  line-height: 1.3;
+  line-height: 1.7;
   background: #fff;
   font-size: 1rem;
   color: var(--text-color);
@@ -244,7 +244,7 @@ img {
 #topBar {
   background: var(--primary-color);
   color: #fff;
-  padding: 0.5rem;
+  padding: 0.15rem;
   border-bottom: 2px solid snow;
 }
 
@@ -277,7 +277,7 @@ img {
 }
 
 #nav .logo {
-  max-width: 20%;
+  max-width: 10%;
 }
 
 #nav .nav-items {
@@ -424,9 +424,16 @@ img {
   margin-bottom: 2rem;
 }
 
+#home-5 .products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .products-container,
 .accredations-container,
-.cta-container {
+.cta-container,
+.product-container {
   width: 90%;
   margin: auto;
 }
@@ -539,18 +546,18 @@ img {
 
 /* About Page styles */
 /* About Header */
-#about-header {
+#page-header {
   background: linear-gradient(
       to right,
       rgba(231, 113, 125, 0.4),
       rgba(230, 70, 70, 0.4),
       rgba(231, 113, 125, 0.4)
     ),
-    url('../images/about-header.jpg') no-repeat 20% 30% / cover;
+    url('../images/page-header.jpg') no-repeat 20% 30% / cover;
   text-transform: uppercase;
 }
 
-#about-header h1 {
+#page-header h1 {
   color: #fff;
 }
 
@@ -605,3 +612,51 @@ img {
 }
 
 /* About Page styles end */
+
+/* Product page styles */
+
+#product-content .product-images {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#product-summary,
+#product-faqs {
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+#product-summary {
+  display: flex;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+#product-summary h2 {
+  color: #fff;
+}
+
+#product-summary .col {
+  width: 50%;
+}
+
+#product-summary .col:last-child {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#product-faqs {
+  padding: 4rem;
+}
+
+#product-faqs article:nth-child(4) ul {
+  list-style-type: decimal;
+}
+
+/* Product page styles end */
