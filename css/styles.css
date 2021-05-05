@@ -655,7 +655,7 @@ img {
   padding: 4rem;
 }
 
-#product-faqs article:nth-child(4) ul {
+#product-faqs article ul {
   list-style-type: decimal;
 }
 
