@@ -121,6 +121,36 @@
   min-width: 100%;
 }
 
+/* Contact Page Styles */
+
+#contact-a {
+  padding: 1rem;
+}
+#contact-a .contact-tiles {
+  grid-template-columns: 1fr;
+  gap: 0;
+
+  min-width: 100%;
+}
+
+#contact-a .contact-tiles .contact-tile {
+  margin: 1rem 0;
+}
+
+#contact-b {
+  padding: 1rem;
+  width: 100%;
+  margin: 0;
+  display: block;
+}
+
+#contact-b .col {
+  width: 100%;
+}
+#contact-b .col iframe {
+  width: 100%;
+}
+
 /* Footer styles */
 
 #footer .footer-container {

@@ -164,6 +164,9 @@ img {
 .p-3 {
   padding: 3rem;
 }
+.p-4 {
+  padding: 4rem;
+}
 
 .mx-1 {
   margin: 0 1rem;
@@ -660,3 +663,66 @@ img {
 }
 
 /* Product page styles end */
+
+/* Contact Page Styles */
+
+#contact-a .contact-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#contact-a .contact-tiles .contact-tile {
+  background: var(--primary-color);
+  text-align: center;
+  color: #fff;
+}
+
+#contact-a .contact-tiles .contact-tile .contact-tile-header {
+  font-size: 1.5rem;
+}
+
+#contact-a .contact-tiles .contact-tile span {
+  display: block;
+}
+
+#contact-b {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+
+  justify-content: space-between;
+}
+
+#contact-b .col form {
+  padding: 1rem;
+}
+
+#contact-b .col form .form-control input,
+#contact-b .col form .form-control textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+#contact-b .col form .form-control textarea {
+  height: 10rem;
+}
+
+#contact-b .col form .form-control input:focus,
+#contact-b .col form .form-control textarea:focus {
+  border: none;
+  outline: 1px solid var(--primary-color);
+}
+
+#contact-b .col {
+  width: 50%;
+}
+
+#contact-b input[type='submit'] {
+  transform: scale(1);
+  transition: all 2s ease;
+}
+
+/* Contact Page Styles End */
