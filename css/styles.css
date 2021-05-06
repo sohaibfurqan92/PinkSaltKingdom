@@ -309,10 +309,44 @@ img {
   border-bottom: 2px solid var(--primary-color);
 }
 
+/* dropdown styles */
+
+#nav .nav-items .nav-item .dropdown {
+  position: relative;
+}
+
+#nav .nav-items .nav-item .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 0;
+  z-index: 1;
+}
+
+#nav .nav-items .nav-item .dropdown-content ul li {
+  padding: 0.5rem;
+}
+
+#nav .nav-items .nav-item .dropdown-content ul li a {
+  color: #fff;
+}
+
+#nav .nav-items .nav-item .dropdown-content ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+#nav .nav-items .nav-item .dropdown:hover .dropdown-content {
+  display: block;
+}
+
 #nav .mobile-nav {
   color: #fff;
   display: none;
 }
+
+/* Homepage styles */
 
 #home-1 {
   background: url('../images/hero.jpg') no-repeat center center/cover;
