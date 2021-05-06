@@ -341,8 +341,12 @@ img {
   display: block;
 }
 
-#nav .mobile-nav {
+#nav #mobile-nav {
   color: #fff;
+  display: none;
+}
+
+#mobile-menu {
   display: none;
 }
 

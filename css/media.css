@@ -21,7 +21,7 @@
   display: none;
 }
 
-#nav .mobile-nav {
+#nav #mobile-nav {
   display: block;
 }
 
@@ -168,6 +168,54 @@
 
 #footer .footer-container div:nth-child(2) ul li a:hover {
   text-decoration: underline;
+}
+
+/* mobile nav menu */
+#mobile-menu {
+  background: #e7717d;
+  width: 60vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+}
+
+#mobile-menu.showNav {
+  display: block;
+}
+
+/* #mobile-menu ul {
+  border: 1px solid blue;
+} */
+
+#mobile-menu ul li {
+  padding: 0.5rem;
+}
+
+#mobile-menu ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+#mobile-menu ul li a:hover {
+  font-size: 2rem;
+}
+
+#mobile-menu .nav-items {
+  margin-top: 5rem;
+}
+
+#mobile-menu .nav-items .nav-item .dropdown-content ul li a {
+  font-size: 1rem;
+}
+
+#mobile-menu .nav-items .nav-item .dropdown-content ul li a:hover {
+  font-size: 1.2rem;
 }
 
 /* Medium devices (tablets, 768px and up) */
