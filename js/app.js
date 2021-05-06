@@ -10,4 +10,10 @@ const toggleMenu = function (e) {
   e.preventDefault();
 };
 
+document.addEventListener('DOMContentLoaded', function () {
+  if (mobileMenu.classList.contains('showNav')) {
+    mobileMenu.classList.remove('showNav');
+  }
+});
+
 navBtn.addEventListener('click', toggleMenu);
